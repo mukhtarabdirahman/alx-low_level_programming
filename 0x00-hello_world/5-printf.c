@@ -1,11 +1,11 @@
 #include <stdio.h>
 /**
- * main - Entry Point
+ * main - starting point of program
  *
- * Return: returns 0 if code executes successfully
-*/
-int main(void) 
+ * Return: return 0 if successful
+ */
+int main(void)
 {
-    printf("with proper grammar, but the outcome is a piece of art, \n");
-    return (0);
+	printf("with proper grammar, but the outcome is a piece of art,\n");
+	return (0);
 }
