@@ -1,20 +1,23 @@
 #include <stdio.h>
-
 /**
-* main - Prints natural numbers below 1024 that are
-* multiplies of 3 or 5
-*
-* Return: Always 0.
-*/
+ * main - main block
+ * Description: computes and prints even  number < 4,000,000
+ * 5 below 1024 (excluded), followed by a new line
+ * Return: 0
+ */
 int main(void)
 {
-	int a, b;
+	int a = 0, b = 1, next = 0;
+	int sum = 0;
 
-	for (a = 1; a < 1024; a++)
-		{
-		if ((a % 3) == 0 || (a % 5) == 0)
-		b += a;
-		}
-	printf("%d\n", b);
+	while (next < 4000000)
+	{
+		next = a + b;
+		a = b;
+		b = next;
+		if (next % 2 == 0)
+			sum += next;
+	}
+	printf("%i\n", sum);
 	return (0);
 }
