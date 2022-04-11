@@ -1,17 +1,16 @@
 #ifndef DOG_H
 #define DOG_H
-
 /**
- * struct dog  - represent a dog with name, age and owner
- * @name: name of dog as string
- * @age: age of the dog as float
- * @owner: owner of the dog as string
+ * struct dog - structure dog
+ * @name: atribute pointer to char name's dog
+ * @age: atribute float age's dog
+ * @owner: atribute pointer to char owner's dog
  */
+
 struct dog
 {
-    char *name;
-    float age;
-    char *owner;
+	char *name;
+	float age;
+	char *owner;
 };
-
 #endif
